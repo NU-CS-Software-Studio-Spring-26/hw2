@@ -1,0 +1,39 @@
+name: Ruby Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        ruby-version: [3.4.1]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Ruby ${{ matrix.ruby-version }}
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true
+    
+    - name: Install dependencies
+      run: bundle install
+    
+    - name: Run tests
+      run: bundle exec rspec
+    
+    - name: Run Part 1 tests
+      run: bundle exec rspec spec/part1_spec.rb
+    
+    - name: Run Part 2 tests
+      run: bundle exec rspec spec/part2_spec.rb
+    
+    - name: Run Part 3 tests
+      run: bundle exec rspec spec/part3_spec.rb

@@ -4,6 +4,22 @@ Ruby Intro
 This 3-part homework gives some basic practice in Ruby as well as
 getting you accustomed to making testing a regular part of your workflow. 
 
+## GitHub Classroom Assignment
+
+This assignment is set up for GitHub Classroom with automatic testing. When you submit your work, GitHub Actions will automatically run the tests and provide feedback.
+
+### Assignment Setup
+1. **Accept the assignment** from the GitHub Classroom link provided by your instructor
+2. **Clone your repository** to your local machine
+3. **Complete the assignment** by implementing the required methods in `lib/ruby_intro.rb`
+4. **Test your work** locally using the commands below
+5. **Push your changes** to GitHub - tests will run automatically!
+
+### Automatic Testing
+- Tests run automatically when you push to the `main` branch
+- You can see test results in the "Actions" tab of your repository
+- Each part of the assignment is tested separately
+- All tests must pass for full credit
 
 Learning Goals
 --------------
