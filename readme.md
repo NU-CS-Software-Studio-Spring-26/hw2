@@ -48,7 +48,7 @@ To ensure you have the rspec gem installed you need bundler and can then
 run bundle install like so:
 ```sh
 $ gem install bundler
-$ cd assignment (main directory for your assignment)
+$ cd hw2 (main directory for your assignment)
 $ bundle
 ```
 When the above completes successfully you'll have RSpec installed and can run `rspec` from the command line to test your code.
@@ -59,7 +59,7 @@ Check the [Ruby 3.x documentation](http://ruby-doc.org) on `Array`,
 `Hash` and `Enumerable` as they could help tremendously with these
 exercises. Various Ruby cheatsheets are also helpful as a quick reference! Although Ruby supports looping constructs like 'for' and 'while', consider using block syntax with each for a more idiomatic use of Ruby. :-) 
 
-0. Define a method `sum(array)` that takes an array of integers as an argument and returns the sum of its elements. For an empty array it should return zero.  Run associated tests via:  `$ rspec -e '#sum ' spec/part1_spec.rb` (Make sure you are in the correct directory: `cd assignment` and rspec is installed)
+0. Define a method `sum(array)` that takes an array of integers as an argument and returns the sum of its elements. For an empty array it should return zero.  Run associated tests via:  `$ rspec -e '#sum ' spec/part1_spec.rb` (Make sure you are in the correct directory: `cd hw2` and rspec is installed)
 
 0. Define a method `max_2_sum(array)` which takes an array of integers as an argument and returns the sum of its two largest elements. For an empty array it should return zero. For an array with just one element, it should return that element (Consider if the two largest elements are the same value as well). Run associated tests via:  `$ rspec -e '#max_2_sum' spec/part1_spec.rb`
 
@@ -72,7 +72,7 @@ You can check your progress on all of the above by running `$ rspec spec/part1_s
 
 Check the documentation on String and Regexp as they could help tremendously with these exercises. For future reference as well, check out https://rubular.com/ for regex related queries. :-)
 
-0. Define a method `hello(name)` that takes a string representing a name and returns the string "Hello, " concatenated with the name. Run associated tests via:  `$ rspec -e '#hello' spec/part2_spec.rb` (Make sure you are in the correct directory: `cd assignment`)
+0. Define a method `hello(name)` that takes a string representing a name and returns the string "Hello, " concatenated with the name. Run associated tests via:  `$ rspec -e '#hello' spec/part2_spec.rb` (Make sure you are in the correct directory: `cd hw2`)
 
 0. Define a method `starts_with_consonant?(s)` that takes a string and returns true if it starts with a consonant and false otherwise. (For our purposes, a consonant is any English letter other than A, E, I, O, U.) Make sure it works for both upper and lower case and for non-letters. Run associated tests via:  `$ rspec -e '#starts_with_consonant?' spec/part2_spec.rb`
 
@@ -84,7 +84,7 @@ You can check your progress on all of the above by running `$ rspec spec/part2_s
 # 3. Object Oriented Basics
 
 
-Define a class `BookInStock` which represents a book with an ISBN number, `isbn`, and price of the book as a floating-point number, `price`, as attributes. Run associated tests via:  `$ rspec -e 'getters and setters' spec/part3_spec.rb` (Make sure you are in the correct directory: `cd assignment`)
+Define a class `BookInStock` which represents a book with an ISBN number, `isbn`, and price of the book as a floating-point number, `price`, as attributes. Run associated tests via:  `$ rspec -e 'getters and setters' spec/part3_spec.rb` (Make sure you are in the correct directory: `cd hw2`)
 
 The constructor should accept the ISBN number (a string, since in real life ISBN numbers can begin with zero and can include hyphens) as the first argument and price as second argument, and should raise `ArgumentError` (one of Ruby's built-in exception types) if the ISBN number is the empty string or if the price is less than or equal to zero.  Include the proper getters and setters for these attributes. Run associated tests via:  `$ rspec -e 'constructor' spec/part3_spec.rb`
 
