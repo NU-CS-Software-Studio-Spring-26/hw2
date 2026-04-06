@@ -4,7 +4,7 @@ require_relative '../lib/ruby_intro.rb'
 
 describe '#hello' do
   it 'should be defined' do
-    expect { hello('Testing') }.not_to raise_error#::NoMethodError)
+    expect { hello('Testing') }.not_to raise_error#::NoMethodError
   end
 
   it 'The hello method returns the correct string [30 points]', points: 30 do
@@ -17,7 +17,7 @@ end
 
 describe '#starts_with_consonant?' do
   it 'should be defined' do
-    expect { starts_with_consonant?('d') }.not_to raise_error#::NoMethodError)
+    expect { starts_with_consonant?('d') }.not_to raise_error#::NoMethodError
   end
   it 'classifies true cases [10 points]' , points: 10 do
     expect(starts_with_consonant?('v')).to be_truthy, "'v' is a consonant"
@@ -41,7 +41,7 @@ end
 
 describe '#binary_multiple_of_4?' do
   it 'should be defined' do
-    expect { binary_multiple_of_4?('yes') }.not_to raise_error#::NoMethodError)
+    expect { binary_multiple_of_4?('yes') }.not_to raise_error#::NoMethodError
   end
   it 'classifies valid binary numbers [30 points]' , points: 30 do
     %w[1010101010100 0101010101010100 100 0].each do |string|

@@ -9,7 +9,7 @@ getting you accustomed to making testing a regular part of your workflow.
 This assignment is set up for GitHub Classroom with automatic testing. When you submit your work, GitHub Actions will automatically run the tests and provide feedback.
 
 ### Assignment Setup
-1. **Accept the assignment** from the GitHub Classroom link provided by your instructor
+1. **Accept the assignment** from the provided GitHub Classroom link  
 2. **Clone your repository** to your local machine
 3. **Complete the assignment** by implementing the required methods in `lib/ruby_intro.rb`
 4. **Test your work** locally using the commands below
@@ -20,6 +20,8 @@ This assignment is set up for GitHub Classroom with automatic testing. When you 
 - You can see test results in the "Actions" tab of your repository
 - Each part of the assignment is tested separately
 - All tests must pass for full credit
+
+This assignment relies on you having some minimal background with single-user workflow in Github (clone, edit locally, commit locally, push to remote). If you haven't done it before, please search for/follow a beginner tutorial, and I and the TA are  happy to explain it individually as well. 
 
 Learning Goals
 --------------
@@ -35,7 +37,7 @@ Overview
 
 **You may find the [Ruby documentation at ruby-doc.org](https://ruby-doc.org) helpful to have on hand.**
 
-The repo for this assigment follows a fairly standard Ruby convention for codebases: the code
+The repo for this assignment follows a fairly standard Ruby convention for codebases: the code
 files are stored in `lib/` and the test files are stored in `spec/`.
 (We use the RSpec unit-testing framework; if we were using Ruby's default
 framework, known as `Test::Unit`, the test files would be under
@@ -58,20 +60,27 @@ used to customize the output format.)
 
 | Local computer setup |
 |-----|
-Ensure that Ruby 3.4.1 is installed.
+Ensure that Ruby 4.0.2 is installed.
 
 To ensure you have the rspec gem installed you need bundler and can then 
 run bundle install like so:
 ```sh
 $ gem install bundler
-$ cd hw2 (main directory for your assignment)
+$ cd hw2
 $ bundle
 ```
 When the above completes successfully you'll have RSpec installed and can run `rspec` from the command line to test your code.
 
+> **Ruby 4.0 Notes**
+>
+> This assignment uses Ruby 4.0, which introduces several important changes from Ruby 3.x:
+>
+> - **Frozen string literals by default.** All string literals (e.g. `"hello"`) are now immutable. Code like `greeting = "Hello, "; greeting << name` will raise a `FrozenError`. Use string interpolation (`"Hello, #{name}"`) or concatenation (`"Hello, " + name`) instead, which create new strings rather than mutating a literal.
+> - **Bundler 4** ships with Ruby 4.0 and enforces HTTPS gem sources. The project Gemfile is already configured correctly for this.
+
 # 1. Arrays, Hashes, and Enumerables
 
-Check the [Ruby 3.x documentation](http://ruby-doc.org) on `Array`,
+Check the [Ruby 4.x documentation](https://ruby-doc.org) on `Array`,
 `Hash` and `Enumerable` as they could help tremendously with these
 exercises. Various Ruby cheatsheets are also helpful as a quick reference! Although Ruby supports looping constructs like 'for' and 'while', consider using block syntax with each for a more idiomatic use of Ruby. :-) 
 

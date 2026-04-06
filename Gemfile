@@ -1,9 +1,8 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-ruby "3.4.1"
+ruby "4.0.2"
 
-gem 'rspec', '~> 3.12'
-gem 'cucumber', '9.0.0'
+gem 'rspec', '~> 4.0'
 
-gem 'byebug'
+gem 'debug'
 
